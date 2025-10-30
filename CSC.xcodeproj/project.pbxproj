@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EEA99D052EB3E569009A4FE7 /* SpeechRecognizerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA99D042EB3E559009A4FE7 /* SpeechRecognizerService.swift */; };
+		EEA99D072EB3F151009A4FE7 /* LanguageDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA99D062EB3F120009A4FE7 /* LanguageDetectionService.swift */; };
+		EEA99D092EB3F3FF009A4FE7 /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA99D082EB3F3F3009A4FE7 /* TranslationService.swift */; };
+		EEA99D0B2EB3F41B009A4FE7 /* TranslateKitAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA99D0A2EB3F411009A4FE7 /* TranslateKitAdapter.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		EEA99CEE2EB3CF65009A4FE7 /* CSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA99D042EB3E559009A4FE7 /* SpeechRecognizerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizerService.swift; sourceTree = "<group>"; };
+		EEA99D062EB3F120009A4FE7 /* LanguageDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDetectionService.swift; sourceTree = "<group>"; };
+		EEA99D082EB3F3F3009A4FE7 /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
+		EEA99D0A2EB3F411009A4FE7 /* TranslateKitAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateKitAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +43,7 @@
 		EEA99CE52EB3CF65009A4FE7 = {
 			isa = PBXGroup;
 			children = (
-				EEA99CF02EB3CF65009A4FE7 /* CSC */,
+				EEA99CFE2EB3E319009A4FE7 /* Services */,
 				EEA99CEF2EB3CF65009A4FE7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +54,58 @@
 				EEA99CEE2EB3CF65009A4FE7 /* CSC.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EEA99CFE2EB3E319009A4FE7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EEA99D032EB3E39E009A4FE7 /* TTS */,
+				EEA99D022EB3E37F009A4FE7 /* Subtitles */,
+				EEA99D012EB3E375009A4FE7 /* Translation */,
+				EEA99D002EB3E36D009A4FE7 /* NLP */,
+				EEA99CFF2EB3E33D009A4FE7 /* Speech */,
+				EEA99CF02EB3CF65009A4FE7 /* CSC */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EEA99CFF2EB3E33D009A4FE7 /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+				EEA99D042EB3E559009A4FE7 /* SpeechRecognizerService.swift */,
+			);
+			path = Speech;
+			sourceTree = "<group>";
+		};
+		EEA99D002EB3E36D009A4FE7 /* NLP */ = {
+			isa = PBXGroup;
+			children = (
+				EEA99D062EB3F120009A4FE7 /* LanguageDetectionService.swift */,
+			);
+			path = NLP;
+			sourceTree = "<group>";
+		};
+		EEA99D012EB3E375009A4FE7 /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+				EEA99D0A2EB3F411009A4FE7 /* TranslateKitAdapter.swift */,
+				EEA99D082EB3F3F3009A4FE7 /* TranslationService.swift */,
+			);
+			path = Translation;
+			sourceTree = "<group>";
+		};
+		EEA99D022EB3E37F009A4FE7 /* Subtitles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subtitles;
+			sourceTree = "<group>";
+		};
+		EEA99D032EB3E39E009A4FE7 /* TTS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TTS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA99D0B2EB3F41B009A4FE7 /* TranslateKitAdapter.swift in Sources */,
+				EEA99D072EB3F151009A4FE7 /* LanguageDetectionService.swift in Sources */,
+				EEA99D052EB3E569009A4FE7 /* SpeechRecognizerService.swift in Sources */,
+				EEA99D092EB3F3FF009A4FE7 /* TranslationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
